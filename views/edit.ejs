@@ -8,6 +8,7 @@
   </head>
   <body>
     <form action="/update/<%= user._id %>" method="post">
+      <input type="text" name="serial" value="<%= user.serial %>" placeholder="serial number" readonly />
       <input type="text" name="name" value="<%= user.name %>" placeholder="username" />
       <input type="email" name="email" value="<%= user.email %>"  placeholder="email" />
       <input type="password" name="password" value="<%= user.password %>"  placeholder="password" />
