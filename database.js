@@ -8,10 +8,15 @@ mongoose.connect("mongodb://127.0.0.1:27017/usercrudapp").then(()=>{
 
 
 const Schema= new mongoose.Schema({
-    name:String,
-    email:String,
-    password:String
-})
+    name: String,
+    email: String,
+    password: String,
+    dateOfBirth: Date,
+    address: String,
+    phoneNumber: String,
+    admissionDate: Date,
+    course: String
+  });
 
 const Usermodel = mongoose.model("User",Schema);
 
