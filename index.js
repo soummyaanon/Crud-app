@@ -15,8 +15,13 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/register", async (req, res) => {
+<<<<<<< HEAD
     const { name, email, password, dateOfBirth, address, phoneNumber, admissionDate, course } = req.body;
     const newUser = new User({ name, email, password, dateOfBirth, address, phoneNumber, admissionDate, course });
+=======
+    const { name, email, password } = req.body;
+    const newUser = new User({ name, email, password });
+>>>>>>> 30bda29af10b3453d1cab726bf8c6102bcaab34c
     await newUser.save();
     res.redirect("/");
 });
@@ -52,4 +57,8 @@ app.get("/delete/:id", async (req, res) => {
 
 app.listen(5000, () => {
     console.log("Server listening on port: 5000");
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 30bda29af10b3453d1cab726bf8c6102bcaab34c
