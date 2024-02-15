@@ -9,7 +9,7 @@
       body {
         font-family: Arial, sans-serif;
         padding: 20px;
-        background-color: #f0f0f0;
+        background-color: #d54141;
       }
       form {
         background-color: #fff;
@@ -44,7 +44,13 @@
       <input type="text" name="name" value="<%= user.name %>" placeholder="username" />
       <input type="email" name="email" value="<%= user.email %>"  placeholder="email" />
       <input type="password" name="password" value="<%= user.password %>"  placeholder="password" />
-      <button>Register</button>
+      <!-- Add new fields -->
+      <input type="date" name="dateOfBirth" value="<%= user.dateOfBirth %>" placeholder="Date of Birth" />
+      <input type="text" name="address" value="<%= user.address %>" placeholder="Address" />
+      <input type="text" name="phoneNumber" value="<%= user.phoneNumber %>" placeholder="Phone Number" />
+      <input type="date" name="admissionDate" value="<%= user.admissionDate %>" placeholder="Admission Date" />
+      <input type="text" name="course" value="<%= user.course %>" placeholder="Course" />
+      <button>Update</button>
     </form>
   </body>
 </html>
