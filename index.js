@@ -12,6 +12,7 @@ app.get("/", async (req, res) => {
         title: "this is homepage",
         users: users
     });
+    
 });
 
 app.post("/register", async (req, res) => {
